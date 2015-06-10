@@ -1,0 +1,19 @@
+<h1>Add a magical item</h1>
+
+<form>
+  <div class="item-name">Name</label>
+    {{input id="item-name" class="form-control" value=title}}
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description</label>
+    {{textarea id="description" class="form-control" rows="15" value=description}}
+  </div>
+
+  <!-- Others to add later?
+  Estimated value
+  Type -->
+
+  <button class="btn btn-primary" {{action 'save'}}>Save</button>
+
+  </form

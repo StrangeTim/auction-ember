@@ -1,4 +1,4 @@
 Auction.Item = DS.Model.extend({
-  item-name: DS.attr(),
+  itemName: DS.attr(),
   description: DS.attr()
 });

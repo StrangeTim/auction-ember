@@ -1,0 +1,7 @@
+<h1>Welcome to our MAGICAL Auction of MAGICAL items.</h1>
+
+{{#each}}
+  <p>{{#link-to 'item' this.id}}{{itemName}}{{/link-to}}</p>
+{{/each}}
+
+<p>{{#link-to 'newItem' classNames="btn btn-primary"}} Add Item {{/link-to}}</p>

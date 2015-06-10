@@ -2,11 +2,12 @@ Auction.NewItemController = Ember.Controller.extend ({
   actions: {
     save: function() {
       var newItem = this.store.createRecord('item', {
-        item-name: this.get('item-name')
+        itemName: this.get('itemName'),
+        description: this.get('description')
       });
       newItem.save();
-      this.setProperties({item-name: " "});
-      this.transitionToRoute('home');
+      this.setProperties({itemName: " ", description: " "});
+      this.transitionToRoute('items');
     }
   }
 });

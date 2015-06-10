@@ -17,18 +17,20 @@
     <script src="store.js"></script>
 
     <!-- controllers -->
-    <script src="item.js"></script>
-    <script src="new-item.js"></script>
+    <script src="controllers/item.js"></script>
+    <script src="controllers/newItem.js"></script>
 
     <!--  routes  -->
+    <script src="routes/items.js"></script>
+    <script src="routes/item.js"></script>
 
     <!--  models  -->
-    <script src="item.js"></script>
+    <script src="models/item.js"></script>
 
     <!--  pages  -->
     <script>
       EmberHandlebarsLoader.loadTemplates([
-        'home', 'new-item', 'item'
+        'items', 'newItem', 'item'
       ]);
     </script>
 

@@ -1,8 +1,9 @@
 <h1>Add a magical item</h1>
 
 <form>
-  <div class="item-name">Name</label>
-    {{input id="item-name" class="form-control" value=title}}
+  <div class="form-group">
+    <label for="itemName">Item to be sold:</label>
+    {{input id="itemName" class="form-control" value=itemName}}
   </div>
 
   <div class="form-group">
@@ -16,4 +17,4 @@
 
   <button class="btn btn-primary" {{action 'save'}}>Save</button>
 
-  </form
+</form>
